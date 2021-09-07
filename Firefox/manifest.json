@@ -1,0 +1,18 @@
+{
+  "name": "Fusion Adblocker and Anti-Tracker",
+  "version": "1.0",
+  "description": "A Simple App for blocking online Ad-content and web trackers via the webRequest API at the DNS level.",
+  "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/", "ws://*/*", "wss://*/*",  "storage", "privacy"],
+  "incognito": "spanning",
+  "background": {
+    "scripts": ["blocked_domains.js", "background.js"]
+  },
+  "icons": {
+    "16": "enabled.png",
+    "48": "enabled_48.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
